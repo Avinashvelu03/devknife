@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+src/
+tests/
+*.tsbuildinfo
+tsconfig.json
+tsconfig.build.json
+tsup.config.ts
+vitest.config.ts
+.eslintrc.json
+.prettierrc
+.github/
+CONTRIBUTING.md
