@@ -5,7 +5,7 @@
 [![npm version](https://img.shields.io/npm/v/devknife.svg)](https://www.npmjs.com/package/devknife)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![TypeScript Strict](https://img.shields.io/badge/TypeScript-Strict-3178c6.svg)](https://www.typescriptlang.org/)
-[![100% Coverage](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg)](https://github.com/Avinashvelu03/devknife)
+[![Library Coverage: 100%](https://img.shields.io/badge/Library%20Coverage-100%25-brightgreen.svg)](https://github.com/Avinashvelu03/devknife)
 [![Zero Dependencies](https://img.shields.io/badge/Dependencies-0-green.svg)](https://github.com/Avinashvelu03/devknife)
 [![Node >= 18](https://img.shields.io/badge/Node-%3E%3D%2018-339933.svg)](https://nodejs.org)
 [![GitHub Stars](https://img.shields.io/github/stars/Avinashvelu03/devknife?style=flat-square&color=yellow)](https://github.com/Avinashvelu03/devknife)
@@ -186,7 +186,7 @@ import {
 - **Interactive TUI** — Built-in terminal menu using `node:readline`
 - **Dual Usage** — CLI tool AND importable TypeScript library
 - **STDIN Support** — Pipe data directly: `echo "hello" | devknife base64 encode`
-- **100% Test Coverage** — Every function, every branch
+- **100% Library Coverage** — Every library function and branch unit-tested; CLI integration-tested separately
 - **TypeScript Strict** — Full type safety with `strict: true`
 - **ESM + CJS** — Dual module format for maximum compatibility
 
