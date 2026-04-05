@@ -8,6 +8,7 @@
 [![100% Coverage](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg)](https://github.com/Avinashvelu03/devknife)
 [![Zero Dependencies](https://img.shields.io/badge/Dependencies-0-green.svg)](https://github.com/Avinashvelu03/devknife)
 [![Node >= 18](https://img.shields.io/badge/Node-%3E%3D%2018-339933.svg)](https://nodejs.org)
+[![GitHub Stars](https://img.shields.io/github/stars/Avinashvelu03/devknife?style=flat-square&color=yellow)](https://github.com/Avinashvelu03/devknife)
 
 ```
     ____  __.     .__                           ___________.__
