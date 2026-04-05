@@ -1,23 +1,26 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to **devknife** will be documented in this file.
 
-## [1.0.0] - 2024-01-01
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+---
+
+## [Unreleased]
+
+### Planned
+- Additional CLI commands
+- Plugin system
+
+---
+
+## [1.0.0] - 2026-04-04
 
 ### Added
 - Initial release of devknife
-- 50+ developer utilities in a single package
-- Zero runtime dependencies
-- CLI tool with interactive TUI mode
-- Importable TypeScript library
-- Dual ESM + CJS build output
-- 100% test coverage
-- Tools included:
-  - **Crypto**: MD5, SHA-1, SHA-256, SHA-512 hashing, password generation
-  - **Generators**: UUID v4, NanoID, Lorem Ipsum
-  - **Encoders**: Base64, URL, HTML entities, JWT decoder
-  - **Formatters**: JSON prettify/minify, text case conversion
-  - **Converters**: Color (HEX/RGB/HSL), timestamps, number bases
-  - **Network**: IP validation, MAC address generation
-- CI/CD pipeline with GitHub Actions
-- ESLint and Prettier configuration
+- 50-in-1 developer Swiss Army knife CLI & library
+- UUID generation, hashing, JWT utilities
+- Base64, JSON, color, time helpers
+- Zero-dependency architecture
+- Full TypeScript support with dual ESM/CJS build

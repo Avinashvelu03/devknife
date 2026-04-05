@@ -1,45 +1,37 @@
 # Contributing to devknife
 
-Thank you for your interest in contributing to devknife!
+Thank you for your interest in contributing! 🎉
 
 ## Getting Started
 
-1. Fork the repository
-2. Clone your fork: `git clone https://github.com/YOUR_USERNAME/devknife.git`
-3. Install dependencies: `npm install`
-4. Build: `npm run build`
-5. Run tests: `npm run test`
+1. **Fork** this repository
+2. **Clone** your fork: `git clone https://github.com/YOUR_USERNAME/devknife.git`
+3. **Install dependencies**: `npm install` or `bun install`
+4. **Create a branch**: `git checkout -b feat/your-feature-name`
 
-## Development Workflow
+## Development
 
-1. Create a branch: `git checkout -b feature/your-feature`
-2. Make your changes
-3. Ensure all tests pass: `npm run test`
-4. Check coverage: `npm run test:coverage`
-5. Format code: `npm run format`
-6. Lint: `npm run lint`
-7. Commit: `git commit -m "Add your feature"`
-8. Push: `git push origin feature/your-feature`
-9. Open a Pull Request
+- Run tests: `npm test` or `bun test`
+- Build: `npm run build` or `bun run build`
+- Lint: `npm run lint`
 
-## Code Standards
-
-- TypeScript strict mode
-- 100% test coverage required
-- No runtime dependencies (Node.js native modules only)
-- Follow existing code style (enforced by ESLint + Prettier)
-
-## Adding a New Tool
-
-1. Create a new file in `src/tools/<category>/<toolname>.ts`
-2. Export it from `src/tools/index.ts`
-3. Add CLI support in `src/cli.ts`
-4. Add tests in `tests/tools/<category>.test.ts`
-5. Update README.md with documentation
-
-## Pull Request Process
+## Submitting a PR
 
 1. Ensure all tests pass
-2. Update documentation
-3. Add tests for new features
-4. Keep PRs small and focused
+2. Add tests for new functionality
+3. Update documentation if needed
+4. Open a Pull Request with a clear title and description
+
+## Code Style
+
+- TypeScript strict mode
+- Zero external dependencies
+- 100% test coverage for new code
+
+## Reporting Issues
+
+Use the [issue templates](https://github.com/Avinashvelu03/devknife/issues/new/choose) to report bugs or request features.
+
+## Code of Conduct
+
+Be respectful and constructive. We welcome contributors of all experience levels.
