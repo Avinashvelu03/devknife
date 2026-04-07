@@ -1,14 +1,15 @@
 # 🔪 devknife
 
-> The ultimate zero-dependency, 50-in-1 developer Swiss Army knife CLI and library.
+<p align="center">
+  <img src="https://img.shields.io/npm/v/devknife?style=flat-square&color=blue" alt="npm version" />
+  <img src="https://img.shields.io/badge/coverage-100%25-brightgreen?style=flat-square" alt="coverage" />
+  <img src="https://img.shields.io/npm/l/devknife?style=flat-square" alt="license" />
+  <img src="https://img.shields.io/badge/dependencies-0-brightgreen?style=flat-square" alt="zero deps" />
+  <img src="https://img.shields.io/badge/TypeScript-first-blue?style=flat-square&logo=typescript&logoColor=white" alt="typescript" />
+  <img src="https://img.shields.io/npm/dm/devknife?style=flat-square" alt="downloads" />
+</p>
 
-[![npm version](https://img.shields.io/npm/v/devknife.svg)](https://www.npmjs.com/package/devknife)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![TypeScript Strict](https://img.shields.io/badge/TypeScript-Strict-3178c6.svg)](https://www.typescriptlang.org/)
-[![Library Coverage: 100%](https://img.shields.io/badge/Library%20Coverage-100%25-brightgreen.svg)](https://github.com/Avinashvelu03/devknife)
-[![Zero Dependencies](https://img.shields.io/badge/Dependencies-0-green.svg)](https://github.com/Avinashvelu03/devknife)
-[![Node >= 18](https://img.shields.io/badge/Node-%3E%3D%2018-339933.svg)](https://nodejs.org)
-[![GitHub Stars](https://img.shields.io/github/stars/Avinashvelu03/devknife?style=flat-square&color=yellow)](https://github.com/Avinashvelu03/devknife)
+> The ultimate zero-dependency, 50-in-1 developer Swiss Army knife CLI and library.
 
 ```
     ____  __.     .__                           ___________.__
