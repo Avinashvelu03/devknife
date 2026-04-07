@@ -68,8 +68,12 @@ export function reverseCase(input: string): string {
     .join('');
 }
 
+const MAX_SLUG_INPUT_LENGTH = 1000;
+
 export function slugify(input: string): string {
-  return input
+  // Guard against ReDoS: cap input length before applying chained regex replacements
+  const safe = input.length > MAX_SLUG_INPUT_LENGTH ? input.slice(0, MAX_SLUG_INPUT_LENGTH) : input;
+  return safe
     .toLowerCase()
     .trim()
     .replace(/[^a-z0-9 \t\r\n_-]/g, '')
