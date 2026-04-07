@@ -48,5 +48,13 @@ export function encodeAttribute(input: string): string {
 }
 
 export function stripTags(input: string): string {
-  return input.replace(/<[^>]*>/g, '');
+    let result = input;
+    let start = result.indexOf('<');
+    while (start !== -1) {
+          const end = result.indexOf('>', start);
+          if (end === -1) { result = result.slice(0, start); break; }
+          result = result.slice(0, start) + result.slice(end + 1);
+          start = result.indexOf('<', start);
+        }
+    return result;
 }

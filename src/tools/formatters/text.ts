@@ -75,5 +75,6 @@ export function slugify(input: string): string {
     .trim()
     .replace(/[^\w\s-]/g, '')
     .replace(/[-_\s]+/g, '-')
-    .replace(/^-+|-+$/g, '');
+          .replace(/^-+/, '')
+        .replace(/-+$/, '');
 }
