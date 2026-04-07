@@ -37,7 +37,7 @@ export function dotCase(input: string): string {
   return input
     .replace(/([A-Z])/g, '.$1')
     .replace(/[-_\s]+/g, '.')
-    .replace(/^\.|\..+$/g, '')
+    .replace(/^\.+|\.+$/g, '')
     .toLowerCase();
 }
 
