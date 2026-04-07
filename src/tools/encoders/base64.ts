@@ -19,7 +19,9 @@ export function isBase64(str: string): boolean {
 }
 
 export function encodeURLSafe(input: string): string {
-  return encode(input).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+    let b64 = encode(input).replace(/\+/g, '-').replace(/\//g, '_');
+    while (b64.endsWith('=')) b64 = b64.slice(0, -1);
+    return b64;
 }
 
 export function decodeURLSafe(input: string): string {
