@@ -1,6 +1,6 @@
 {
   "name": "devknife",
-    "version": "1.0.2",
+    "version": "1.0.3",
   "description": "The ultimate zero-dependency, 50-in-1 developer Swiss Army knife CLI and library.",
   "author": "Avinashvelu03 <avinashvelu03@gmail.com>",
   "license": "MIT",
