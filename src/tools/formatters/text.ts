@@ -4,14 +4,14 @@
  */
 export function camelCase(input: string): string {
   return input
-    .replace(/[-_\s]+(.)?/g, (_, c) => (c ? c.toUpperCase() : ''))
+    .replace(/[-_ \t\r\n]+(.)?/g, (_, c) => (c ? c.toUpperCase() : ''))
     .replace(/^[A-Z]/, (c) => c.toLowerCase());
 }
 
 export function snakeCase(input: string): string {
   return input
     .replace(/([A-Z])/g, '_$1')
-    .replace(/[-\s]+/g, '_')
+    .replace(/[- \t\r\n]+/g, '_')
     .replace(/^_/, '')
     .toLowerCase();
 }
@@ -19,7 +19,7 @@ export function snakeCase(input: string): string {
 export function kebabCase(input: string): string {
   return input
     .replace(/([A-Z])/g, '-$1')
-    .replace(/[_\s]+/g, '-')
+    .replace(/[_ \t\r\n]+/g, '-')
     .replace(/^-/, '')
     .toLowerCase();
 }
@@ -36,20 +36,20 @@ export function constantCase(input: string): string {
 export function dotCase(input: string): string {
   return input
     .replace(/([A-Z])/g, '.$1')
-    .replace(/[-_\s]+/g, '.')
+    .replace(/[-_ \t\r\n]+/g, '.')
     .replace(/^\.+|\.+$/g, '')
     .toLowerCase();
 }
 
 export function titleCase(input: string): string {
   return input
-    .split(/[-_\s]+/)
+    .split(/[-_ \t\r\n]+/)
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
     .join(' ');
 }
 
 export function sentenceCase(input: string): string {
-  const result = input.replace(/[-_\s]+/g, ' ').trim();
+  const result = input.replace(/[-_ \t\r\n]+/g, ' ').trim();
   return result.charAt(0).toUpperCase() + result.slice(1).toLowerCase();
 }
 
@@ -72,7 +72,7 @@ export function slugify(input: string): string {
   return input
     .toLowerCase()
     .trim()
-    .replace(/[^\w\s-]/g, '')
+    .replace(/[^a-z0-9 \t\r\n_-]/g, '')
     .replace(/[ \t\r\n_-]+/g, '-')
     .replace(/^-+/, '')
     .replace(/-+$/, '');
