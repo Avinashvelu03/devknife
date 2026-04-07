@@ -2,7 +2,6 @@
  * String case converter.
  * Zero-dependency.
  */
-
 export function camelCase(input: string): string {
   return input
     .replace(/[-_\s]+(.)?/g, (_, c) => (c ? c.toUpperCase() : ''))
@@ -38,7 +37,7 @@ export function dotCase(input: string): string {
   return input
     .replace(/([A-Z])/g, '.$1')
     .replace(/[-_\s]+/g, '.')
-    .replace(/^\.|\.+$/g, '')
+    .replace(/^\.|\..+$/g, '')
     .toLowerCase();
 }
 
@@ -74,7 +73,7 @@ export function slugify(input: string): string {
     .toLowerCase()
     .trim()
     .replace(/[^\w\s-]/g, '')
-    .replace(/[-_\s]+/g, '-')
-          .replace(/^-+/, '')
-        .replace(/-+$/, '');
+    .replace(/[ \t\r\n_-]+/g, '-')
+    .replace(/^-+/, '')
+    .replace(/-+$/, '');
 }
